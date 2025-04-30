@@ -1,0 +1,280 @@
+:root {
+    --width-container: 98vw;
+    --height-menu: 60px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        color: gold;
+    }
+}
+
+/* Color, fuentes tipograficas  */
+.container {
+    background: linear-gradient(to bottom, rgb(69, 72, 77) 0%, rgb(0, 0, 0) 100%);
+    color: white;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    /* Tamaño de la Tipografía responsive */
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    line-height: 1.5em;
+
+    h1 {
+        font-size: clamp(1.2rem, 3.5vw, 2rem);
+    }
+}
+
+header {
+    display: flex;
+    flex-flow: column wrap;
+    background: black;
+    width: var(--width-container);
+
+    .logo {
+        margin: 0 auto;
+        text-align: center;
+        border: 0px solid red;
+        width: 15vw;
+        line-height: 6px;
+        figure {
+            margin: 2px 10px;
+        }
+    }
+
+    h1 {
+        border: 0px solid blue;
+        a{
+            text-align: center;
+            font-size: 1em;
+        }
+        margin: 0 auto;
+
+    }
+
+    .mainmenu ul {
+        font-size: 0.8em;
+        display: flex;
+        flex-flow: column wrap;
+
+        border: 0px solid red;
+        list-style: none;
+
+        li {
+            border: 0px solid red;
+            margin: 0 0.5vw;
+            text-align: center;
+            display: block;
+
+            a {
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+
+                &:hover {
+                    text-shadow: 5px 0px 10px rgba(251, 249, 14, 0.91);
+                    color: gold;
+                }
+            }
+        }
+    }
+
+    .login {
+        /*line-height: calc(var(--height-menu) + 10px);*/
+        display: none;
+        font-size: 1.4em;
+        margin-right: 1vw;
+        border: 0px solid red;
+
+        span:hover {
+            color: gold;
+        }
+    }
+
+}
+
+.btnsearch {
+    margin: 0 auto;
+    width: calc( var(--width-container) - 0.2vw );
+    min-height: 50px;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+
+/* Diseño responsive */
+/* imágen responsive */
+figure {
+    width: auto;
+
+    img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+}
+
+figure.small {
+    width: auto;
+
+    img {
+        width: 30%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+}
+
+figure.medium {
+    width: auto;
+
+    img {
+        width: 70%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+}
+
+figure.large {
+    width: auto;
+    img {
+        width: 100%;
+        aspect-ratio: 16 / 4;
+        object-fit: cover;
+    }
+}
+
+/* Layout   */
+.container {
+    
+    width: var(--width-container);
+    margin: 0 auto;
+    main, aside{
+        padding: 3vw;
+    }
+}
+
+
+
+.solarsys-container {
+
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 1vw;
+    grid-template-areas:
+        'mer'
+        'ven'
+        'tie' 
+        'sol'
+        'mar'
+        'sat' 
+        'ura'
+        'jup'
+        'nep'
+    ;
+
+    & > *{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .mercurio {
+        grid-area: mer;
+    }
+
+    .venus {
+        grid-area: ven;
+    }
+
+    .tierra {
+        grid-area: tie;
+    }
+
+    .sol {
+        grid-area: sol;
+    }
+
+    .marte {
+        grid-area: mar;
+    }
+
+    .jupiter {
+        grid-area: jup;
+    }
+
+    .saturno {
+        grid-area: sat;
+    }
+
+    .urano {
+        grid-area: ura;
+    }
+
+    .neptuno {
+        grid-area: nep;
+    }
+}
+
+aside {
+    ul{
+        list-style: square;
+    }
+    display: flex;
+    flex-flow: row nowrap;
+
+    &>* {
+        width: 50vw;
+    }
+}
+
+footer {
+    margin-top: 3vh;
+    border-top: 5px solid white;
+    line-height: 10vh;
+    text-align: center;
+    color: aqua;
+    text-transform: uppercase;
+}
+
+
+/* Diseño responsive */ 
+@media screen and (width >=768px) {
+    header {
+        flex-flow: row wrap;
+        justify-content: start;
+        .logo {
+            width: 6vw;
+            margin: 0;
+        }
+        align-items:center;
+        .mainmenu ul {
+            flex-flow: row wrap;
+            align-content:start;
+        }
+        .login{
+            display: inherit;
+        }
+    }
+
+    .solarsys-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 1vw;
+        grid-template-areas:
+            'mer mer ven ven'
+            'tie sol sol mar'
+            'sat sol sol ura'
+            'jup jup nep nep'
+        ;
+    }
+}

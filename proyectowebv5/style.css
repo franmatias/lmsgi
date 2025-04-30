@@ -1,0 +1,649 @@
+:root {
+   --primary-color: #24194e;
+   --secondary-color: #b387ff;
+   --text-color: #333;
+   --background-color: #f0e6ef;
+   --white-color: #fff;
+   --font-family: 'Caveat', cursive;
+   --font-size-base: 1.3rem; /* Aumentado desde 1rem */
+   --font-size-h2: 3rem;     /* Aumentado desde 2.5rem */
+   --padding-section: 2rem;
+   --margin-section: 2em auto;
+   --max-width-container: 1200px;
+}
+
+body {
+   font-family: var(--font-family);
+   margin: 0;
+   padding: 0;
+   background-color: var(--background-color);
+   color: var(--text-color);
+   font-size: var(--font-size-base);
+   transition: cursor 0.3s ease;
+   a{
+      cursor: url('images/magic-wand.png') 10 10, auto;
+      transition: cursor 0.3s ease;
+   }
+
+
+}
+
+/* Estilos del Header */
+header {
+   background: var(--primary-color);
+   color: var(--white-color);
+   padding: 1em 0;
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+}
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: var(--max-width-container);
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+.logo {
+   font-size: 1.5em;
+   font-weight: bold;
+}
+
+.nav-links {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+}
+
+.nav-links li {
+   margin: 0 15px;
+}
+
+.nav-links a {
+   text-decoration: none;
+   color: var(--white-color);
+   transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+   color: var(--secondary-color);
+}
+
+.menu-toggle {
+   display: none;
+   cursor: pointer;
+   font-size: 1.5em;
+}
+
+/* Fin de estilos del Header */
+
+/* Estilos del Hero */
+.hero {
+   position: relative;
+   color: var(--white-color);
+   text-align: center;
+   padding: 100px 0;
+   overflow: hidden;
+}
+
+.hero::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.6);
+   /* Ajusta la opacidad aquí */
+   z-index: 1;
+}
+
+.hero-video {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: 0;
+}
+
+
+.hero-content {
+   position: relative;
+   z-index: 2;
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+.hero h1 {
+   font-size: 4.5em; /* Aumentado desde 4em */
+   margin-bottom: 20px;
+   font-weight: bold;
+   text-transform: uppercase;
+   -webkit-text-fill-color: transparent;
+   background-image: linear-gradient(45deg, transparent, transparent, #b387ff, #b387ff, transparent, transparent);
+   -webkit-background-clip: text;
+   background-clip: text;
+   transition: transform 0.3s ease;
+   &:hover {
+      -webkit-text-fill-color: #b387ff63;
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 5px #b387ff65);
+      transition: transform 0.3s ease;
+   }
+}
+
+.hero p {
+   font-size: 1.4em; /* Aumentado desde 1.2em */
+   margin-bottom: 30px;
+}
+
+.overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.5);
+   /* Oscurecer ligeramente el fondo */
+   z-index: 1;
+}
+
+/* Fin de estilos del Hero */
+
+/* Estilos del Content */
+.content,
+.articles {
+   max-width: var(--max-width-container);
+   margin: var(--margin-section);
+   padding: 0 20px;
+   text-align: center;
+   position: relative;
+   /* Añadido para el parallax */
+   overflow: hidden;
+}
+
+.content.parallax {
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+.parallax-content {
+   padding-bottom: var(--padding-section);
+}
+
+.content h2,
+.articles h2 {
+   font-size: var(--font-size-h2);
+   margin-bottom: 1em;
+}
+
+.content.gradient {
+   background-image: linear-gradient(to bottom, #e6dcf4, #f0e6ef);
+}
+
+.articles.gradient {
+   background-image: linear-gradient(to bottom, #f0e6ef, #e6dcf4);
+}
+
+.grid-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 20px;
+   padding: 20px;
+   margin-bottom: 1em;
+}
+
+.grid-item {
+   background: #f9f9f9;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   text-align: left;
+}
+
+.grid-item img {
+   max-width: 100%;
+   height: auto;
+   object-fit: cover;
+   margin-bottom: 15px;
+}
+
+/* Fin de estilos del Content */
+/* Estilos del Formulario */
+.wizard-form {
+   max-width: 600px;
+   margin: 2em auto;
+   padding: 20px;
+   background: var(--white-color);
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   background: linear-gradient(145deg, #ffffff, #f0f0f0);
+   border: 2px solid var(--secondary-color);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wizard-form:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 5px 15px rgba(179, 135, 255, 0.3);
+}
+
+.form-group {
+   margin-bottom: 15px;
+}
+
+.form-group label {
+   display: block;
+   margin-bottom: 5px;
+   font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group select {
+   width: calc(100% - 20px);
+   padding: 10px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   box-sizing: border-box;
+   background: rgba(255, 255, 255, 0.9);
+   border: 2px solid #ddd;
+   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group select:focus {
+   border-color: var(--secondary-color);
+   box-shadow: 0 0 5px rgba(179, 135, 255, 0.5);
+   outline: none;
+}
+
+.radio-group {
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+}
+
+.radio-group label {
+   margin-right: 10px;
+   font-weight: normal;
+}
+
+.radio-group input[type="radio"] {
+   accent-color: var(--secondary-color);
+}
+
+/* Estilos adicionales para el formulario */
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.checkbox-group label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: var(--secondary-color);
+    width: 16px;
+    height: 16px;
+}
+
+.checkbox-group input[type="checkbox"]:hover,
+.radio-group input[type="radio"]:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+/* Estilos para sliders */
+.slider-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.slider-item {
+    display: flex;
+    align-items: center;
+}
+
+.slider-item label {
+    width: 150px;
+}
+
+.slider-item input[type="range"] {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.slider-item span {
+    width: 30px;
+    text-align: center;
+}
+
+/* Fin de estilos del Formulario */
+/* Estilos de la Tabla */
+table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-top: 20px;
+   background: linear-gradient(145deg, #ffffff, #f0f0f0);
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+   border: 1px solid #ddd;
+   padding: 10px;
+   text-align: left;
+}
+
+th {
+   background-color: #f2f2f2;
+   background: var(--primary-color);
+   color: var(--white-color);
+   font-weight: 600;
+   text-transform: uppercase;
+   padding: 15px;
+}
+
+td {
+   background: rgba(255, 255, 255, 0.8);
+   padding: 12px;
+   transition: background-color 0.3s ease;
+}
+
+tr:hover td {
+   background: rgba(179, 135, 255, 0.1);
+}
+
+.magician-image {
+   max-width: 80px;
+   height: auto;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 50%;
+   transition: transform 0.3s ease;
+   border: 2px solid var(--secondary-color);
+}
+
+.magician-image:hover {
+   transform: scale(1.2);
+}
+
+/* Fin de estilos de la Tabla */
+/* Estilos del Footer */
+.footer {
+   background: var(--primary-color);
+   color: var(--white-color);
+   text-align: center;
+   padding: 20px 0;
+   position: relative;
+   overflow: hidden;
+}
+
+.footer strong {
+   color: var(--secondary-color);
+}
+
+.footer::before {
+   content: "";
+   position: absolute;
+   top: -50%;
+   left: -50%;
+   width: 200%;
+   height: 200%;
+   background: radial-gradient(circle at center, var(--secondary-color), transparent);
+   animation: fondo-animado 20s linear infinite;
+   z-index: -1;
+}
+
+@keyframes fondo-animado {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0;
+}
+
+.footer-section {
+   padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* En pantallas grandes (mínimo 1024px), mostrar en tres columnas */
+@media (min-width: 1024px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: var(--max-width-container);
+        margin: 0 auto;
+    }
+
+    .footer-section {
+        width: 30%;
+        margin-bottom: 0;
+        text-align: left;
+    }
+}
+
+.social-icons {
+   margin-top: 10px;
+}
+
+.social-icons a {
+   color: var(--white-color);
+   font-size: 1.5em;
+   margin: 0 10px;
+   text-decoration: none;
+   transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+   color: var(--secondary-color);
+}
+
+/* Fin de estilos del Footer */
+.btn {
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: var(--secondary-color);
+   color: var(--white-color);
+   text-decoration: none;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+   background-color: #845ec2;
+}
+
+/* Estilos botón Top */
+#back-to-top {
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   background-color: var(--secondary-color);
+   color: var(--white-color);
+   border: none;
+   border-radius: 50%;
+   padding: 10px 12px;
+   cursor: pointer;
+   font-size: 1.5em;
+   opacity: 0;
+   transition: opacity 0.3s ease;
+   z-index: 1000;
+}
+
+#back-to-top.show {
+   opacity: 1;
+}
+
+/* Estilos para listas */
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+ul li::before {
+    content: '⭐'; /* Alternativas: ✨ 🌟 ⚡ 🔮 */
+    position: absolute;
+    left: -8px;
+    color: var(--secondary-color);
+    font-size: 1.2em;
+}
+
+ul li:hover::before {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+/* Excepción para nav-links */
+.nav-links {
+    padding-left: 0;
+}
+
+.nav-links li::before {
+    content: none;
+}
+
+/* Estilos para elementos de texto */
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+strong {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+em {
+    font-style: italic;
+    color: var(--secondary-color);
+}
+
+span {
+    color: var(--secondary-color);
+}
+
+blockquote {
+    margin: 20px 0;
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    border-left: 5px solid var(--secondary-color);
+    font-style: italic;
+    position: relative;
+    color: var(--text-color);
+    font-size: calc(1em + 0.2vw);
+}
+
+blockquote::before {
+    content: '“';
+    font-size: 4em;
+    position: absolute;
+    left: -16px;
+    top: -32px;
+    color: var(--secondary-color);
+}
+
+blockquote cite {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    font-style: normal;
+    color: var(--text-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+   .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: var(--primary-color);
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+   }
+
+   .nav-links.active {
+      display: flex;
+   }
+
+   .nav-links li {
+      margin: 15px 0;
+   }
+
+   .menu-toggle {
+      display: block;
+   }
+
+   .hero h1 {
+      font-size: 2.2em;
+   }
+
+   .hero p {
+      font-size: 1em;
+   }
+
+   .content h2,
+   .articles h2 {
+      font-size: 2em;
+      margin-bottom: 1em;
+   }
+
+   .radio-group {
+      flex-direction: column;
+   }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+   body{
+      font-size: clamp(1.5rem, 1.5vw, 1.5rem);
+   }
+   .hero h1 {
+      font-size: 2.5em;
+   }
+
+   .hero p {
+      font-size: 1.1em;
+   }
+}

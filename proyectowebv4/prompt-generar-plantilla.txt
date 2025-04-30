@@ -1,0 +1,99 @@
+Crea el diseño de la página web (HTML, CSS y JS) para que se enfoque en el tema de fanzine de Dragon Ball. 
+Tómate el tiempo necesario, pero es muy importante que sea muy detallado. Nos jugamos el puesto de trabajo
+Aquí está la descripción detallada de los diferentes elementos:
+
+Secciones:
+ - Header fijo con navegación
+ - Un botón responsive, que se muestra solo en el móvil, y al hacer clic muestre el menú principal en vertical 
+ - Un botón de login / Sign in
+ - Campo de búsqueda
+ - Un botón para cambiar al modo oscuro, y realiza los estilos del modo oscuro 
+ - Un botón ir arriba 
+ - Componente breadcrumbs
+ - Hero section con mensaje principal
+ - Sección de productos en grid
+ - Footer con llamado a la acción
+ - Menú de redes sociales en el footer
+
+Footer:
+ - Menú de redes sociales con iconos
+ - Hover effects en los iconos
+ - Integración con Font Awesome 
+
+Navegación: (en relación al contenido)
+ - Menú principal con enlaces a secciones
+ - Comportamiento responsive (menú hamburguesa en móvil)
+ - Smooth scroll implementado
+
+Optimizaciones:
+ - Normalize.css para consistencia entre navegadores
+ - Transiciones suaves
+ - Interacciones hover en cards y botones
+ - El proyecto debe tener el HTML en el directorio principal y en carpetas separadas el css y js
+
+Modo oscuro:
+ - Botón toggle con icono sol/luna
+ - Variables CSS para temas claro/oscuro
+ - Transiciones suaves entre modos
+ - Colores adaptados para mejor legibilidad
+
+
+
+Encabezado:
+
+Logotipo con el nombre "RTS Gamers" en una tipografía 'variable' adecuada al tema.
+Menú de navegación principal con enlaces como: "Inicio", "Juegos", "Tutoriales", "Comunidad" y "Soporte".
+Icono de menú tipo "hamburguesa" que se mostrará en dispositivos móviles para acceder a la navegación.
+Iconos de redes sociales (YouTube, Twitch, Discord) en un tono azul oscuro.
+Campo de búsqueda con un fondo gris suave.
+Botones de "Iniciar sesión" y "Registrarse" en tonos azul y naranja, respectivamente.
+
+
+Sección principal:
+
+Imagen de fondo que muestra una batalla épica de un juego de estrategia en tiempo real, como "StarCraft" o "Age of Empires".
+Título "Domina el campo de batalla" y subtítulo "Tu guía definitiva para los mejores juegos RTS"
+Breve descripción del sitio web resaltando el contenido sobre juegos de estrategia en tiempo real.
+
+
+Secciones de contenido:
+
+"Juegos destacados": Sección con miniaturas e información de los principales juegos RTS.
+"Últimas guías y tutoriales": Sección con las publicaciones más recientes sobre estrategias, consejos y trucos para juegos RTS.
+"Comunidad RTS": Sección con información sobre eventos, torneos y foros de la comunidad de jugadores.
+
+
+Área de suscripción:
+
+Campo para ingresar el correo electrónico con una etiqueta que invite a suscribirse a las novedades.
+Botón de "Suscribirse" en un tono de naranja vibrante.
+
+
+Pie de página:
+
+Enlaces a las páginas del sitio web: "Inicio", "Juegos", "Tutoriales", "Comunidad" y "Soporte".
+Información de contacto y enlaces a redes sociales.
+Botón para volver al inicio de la página, con un ícono de flecha hacia arriba.
+Alternador de modo oscuro/claro para que los usuarios puedan elegir su preferencia.
+
+
+Elementos de diseño:
+Paleta de color:
+    Cyan Energético	#00BFFF
+    Rojo Intenso	#FF0000
+    Verde Esmeralda	#50C878
+    Naranja Brillante	#FFA500
+    Púrpura Nobles	#800080
+Tipografías:
+Principal: 'Roboto', sans-serif;
+Encabezado:'Bangers', cursive;
+Uso de iconos relacionados con juegos, como mandos de consola, naves espaciales o unidades militares.
+Diseño responsive que se adapta a 3 diferentes tamaños de pantalla, con el menú de tipo "hamburguesa" en dispositivos móviles.
+
+
+
+
+
+
+
+

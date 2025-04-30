@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanzine Dragon Ball</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logotipo" />
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav no-search">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#personajes">Personajes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#about">Acerca de</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="login-btn" title="Login / Sign in"><i class="fas fa-user"></i></button>
+                <input type="text" placeholder="Buscar..." class="search-bar">
+                <button class="dark-mode-toggle" id="dark-mode-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="breadcrumbs">
+        <a href="#">Inicio</a> &gt; <a href="#">Historia</a> &gt; <span>Personajes</span>
+    </div>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Bienvenido al Fanzine de Dragon Ball</h1>
+            <p>Descubre los secretos y aventuras de este universo</p>
+        </div>
+    </section>
+
+    <section id="historia">
+        <h2>Un poco de historia..</h2>
+        <p>Dragon Ball es una serie de manga escrita e ilustrada por Akira Toriyama. <strong>La historia sigue las
+                aventuras de Goku</strong>, un guerrero Saiyajin que fue enviado a la Tierra cuando era un bebé. A lo
+            largo de su vida, Goku se enfrenta a numerosos enemigos y se hace más fuerte con cada batalla.</p>
+        <p><strong>La serie comenzó en 1984</strong> y rápidamente se convirtió en un fenómeno mundial. El manga fue
+            adaptado a una serie de anime que también tuvo un gran éxito. Dragon Ball ha influido en muchas otras series
+            y ha dejado una marca indeleble en la cultura popular.</p>
+        <p>A lo largo de los años, <em>Dragon Ball</em> ha tenido varias secuelas y spin-offs, incluyendo Dragon Ball Z,
+            Dragon Ball GT y Dragon Ball Super. Cada una de estas series ha expandido el universo de Dragon Ball y ha
+            introducido nuevos personajes y transformaciones.</p>
+    </section>
+
+    <section id="personajes" class="grid">
+        <h2>Personajes</h2>
+        <div class="card-container">
+            <article class="card">
+                <img src="images/goku.png" alt="Goku">
+                <div class="card-content">
+                    <h3>Goku</h3>
+                    <p>El protagonista principal de Dragon Ball. Habilidades: Kamehameha, Super Saiyan.</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="images/vegeta.png" alt="Vegeta">
+                <div class="card-content">
+                    <h3>Vegeta</h3>
+                    <p>El príncipe de los Saiyajin. Habilidades: Galick Gun, Super Saiyan.</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="images/piccolo.png" alt="Piccolo">
+                <div class="card-content">
+                    <h3>Piccolo</h3>
+                    <p>Un guerrero Namekiano y mentor de Gohan. Habilidades: Special Beam Cannon, regeneración.</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="images/gohan.avif" alt="Gohan">
+                <div class="card-content">
+                    <h3>Gohan</h3>
+                    <p>Hijo de Goku, un guerrero con gran potencial. Habilidades: Masenko, Super Saiyan.</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="images/trunks.webp" alt="Trunks">
+                <div class="card-content">
+                    <h3>Trunks</h3>
+                    <p>Hijo de Vegeta y Bulma, viajero del tiempo. Habilidades: Burning Attack, Super Saiyan.</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="images/krillin.png" alt="Krillin">
+                <div class="card-content">
+                    <h3>Krillin</h3>
+                    <p>El mejor amigo de Goku y un hábil luchador. Habilidades: Destructo Disc, Kamehameha.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="momentos-epicos">
+        <h2>Momentos Épicos</h2>
+        <ul>
+            <li><strong><meter min="0" max="10" value="3"></meter></strong> <span>La primera transformación de Goku en
+                    Super Saiyan en Namek.</span></li>
+            <li><strong><meter min="0" max="10" value="4"></meter></strong> <span>La fusión de Gotenks y su lucha contra
+                    Majin Buu.</span></li>
+            <li><strong><meter min="0" max="10" value="2"></meter></strong> <span>La batalla final entre Goku y Freezer
+                    en Namek.</span></li>
+            <li><strong><meter min="0" max="10" value="6"></meter></strong> <span>La transformación de Vegeta en Super
+                    Saiyan Blue.</span></li>
+            <li><strong><meter min="0" max="10" value="5"></meter></strong> <span>El sacrificio de Goku para derrotar a
+                    Cell.</span></li>
+            <li><strong><meter min="0" max="10" value="6"></meter></strong> <span>La derrota de Majin Buu por Goku con
+                    la Genki Dama.</span></li>
+            <li><strong><meter min="0" max="10" value="7"></meter></strong> <span>La llegada de Trunks del futuro y su
+                    derrota de Freezer.</span></li>
+            <li><strong><meter min="0" max="10" value="4"></meter></strong> <span>La primera aparición de Broly y su
+                    transformación en Super Saiyan Legendario.</span></li>
+            <li><strong><meter min="0" max="10" value="9"></meter></strong> <span>La fusión de Vegeta y su lucha contra
+                    Super Buu.</span></li>
+            <li><strong><meter min="0" max="10" value="10"></meter></strong> <span>La batalla entre Goku y Jiren en el
+                    Torneo de Poder.</span></li>
+        </ul>
+    </section>
+
+    <section id="curiosidades">
+        <h2>Curiosidades..</h2>
+            <ul>
+                <li>El nombre de Goku es una referencia a Sun Wukong, el Rey Mono de la novela china "Viaje al Oeste".</li>
+                <li>Akira Toriyama, el creador de Dragon Ball, también es conocido por su trabajo en la serie Dr. Slump.</li>
+                <li>El diseño de los Saiyajin está inspirado en los guerreros de la mitología japonesa.</li>
+                <li>El personaje de Vegeta fue originalmente concebido como un villano, pero se convirtió en un aliado de Goku.</li>
+                <li>La técnica Kamehameha fue nombrada en honor al rey hawaiano Kamehameha I.</li>
+                <li>Dragon Ball ha influido en muchas otras series de anime y manga, incluyendo Naruto y One Piece.</li>
+                <li>El personaje de Bulma ha cambiado de peinado más de 10 veces a lo largo de la serie.</li>
+                <li>El actor de voz de Goku en japonés, Masako Nozawa, también da voz a Gohan y Goten.</li>
+                <li>El planeta Namek está basado en el planeta Namekusei, que significa "planeta caracol" en japonés.</li>
+                <li>El personaje de Mr. Satan fue renombrado como Hercule en la versión estadounidense del anime.</li>
+            </ul>
+            <h2>Datos Interesantes..</h2>
+            <ul>
+                <li>Dragon Ball ha vendido más de 300 millones de copias de manga en todo el mundo.</li>
+                <li>La serie ha generado más de 20 películas y especiales de televisión.</li>
+                <li>Dragon Ball Z es la serie más popular de la franquicia, con más de 291 episodios.</li>
+                <li>El videojuego Dragon Ball FighterZ ha sido aclamado por la crítica y ha ganado varios premios.</li>
+                <li>El personaje de Goku ha aparecido en más de 30 videojuegos diferentes.</li>
+            </ul>
+    </section>
+
+    <section id="fan-art">
+        <h2>Fan Art y Creaciones</h2>
+        <p>Un espacio para que los artistas envíen sus ilustraciones, cómics cortos o fanfics inspirados en Dragon Ball.
+            Se pueden realizar concursos mensuales para destacar el mejor arte.</p>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+            <img src="images/fanart1.jpg">
+            <div class="text">@SuperSaiyanArtist - "Goku en su forma Ultra Instinct"</div>
+            </div>
+            <div class="mySlides fade">
+            <img src="images/fanart2.jpg">
+            <div class="text">@PrinceOfAllArt - "Vegeta en Super Saiyan Blue"</div>
+            </div>
+            <div class="mySlides fade">
+            <img src="images/fanart3.webp">
+            <div class="text">@FusionMaster - "Fusión de Gotenks"</div>
+            </div>
+            <div class="mySlides fade">
+            <img src="images/fanart4.webp">
+            <div class="text">@NamekianWarrior - "Piccolo en Namek"</div>
+            </div>
+            <div class="mySlides fade">
+            <img src="images/fanart5.webp">
+            <div class="text">@FutureTrunksFan - "Trunks del futuro"</div>
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <section id="guia-transformaciones">
+        <h2>Guía de Transformaciones</h2>
+            <div class="transformation-guide">
+            <h3>Transformaciones de los Saiyajin</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Transformación</th>
+                        <th>Requisitos</th>
+                        <th>Poder</th>
+                        <th>Apariencia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Super Saiyan</td>
+                        <td>Nivel de poder alto y una intensa emoción</td>
+                        <td>Multiplica el poder base por 50</td>
+                        <td>Cabello dorado y ojos verdes</td>
+                    </tr>
+                    <tr>
+                        <td>Super Saiyan 2</td>
+                        <td>Superar los límites del Super Saiyan</td>
+                        <td>Multiplica el poder base por 100</td>
+                        <td>Aparición de rayos alrededor del cuerpo</td>
+                    </tr>
+                    <tr>
+                        <td>Super Saiyan 3</td>
+                        <td>Entrenamiento intensivo y control de energía</td>
+                        <td>Multiplica el poder base por 400</td>
+                        <td>Cabello largo y sin cejas</td>
+                    </tr>
+                    <tr>
+                        <td>Super Saiyan God</td>
+                        <td>Ritual con cinco Saiyajins de corazón puro</td>
+                        <td>Poder divino inmenso</td>
+                        <td>Aura roja</td>
+                    </tr>
+                    <tr>
+                        <td>Super Saiyan Blue</td>
+                        <td>Control del poder de Super Saiyan God y Super Saiyan</td>
+                        <td>Poder divino combinado con Super Saiyan</td>
+                        <td>Cabello azul</td>
+                    </tr>
+                    <tr>
+                        <td>Ultra Instinct</td>
+                        <td>Entrenamiento extremo y control mental</td>
+                        <td>Reacciones instintivas en combate</td>
+                        <td>Velocidad y poder sin precedentes</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Otras Transformaciones</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Transformación</th>
+                        <th>Requisitos</th>
+                        <th>Poder</th>
+                        <th>Apariencia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Golden Freezer</td>
+                        <td>Entrenamiento intensivo</td>
+                        <td>Poder similar al de un Super Saiyan Blue</td>
+                        <td>Apariencia dorada</td>
+                    </tr>
+                    <tr>
+                        <td>Majin Buu</td>
+                        <td>Absorción de otros seres</td>
+                        <td>Varias formas con diferentes niveles de poder</td>
+                        <td>Varía según la forma</td>
+                    </tr>
+                    <tr>
+                        <td>Cell Perfecto</td>
+                        <td>Absorción de los androides 17 y 18</td>
+                        <td>Poder inmenso y habilidades regenerativas</td>
+                        <td>Apariencia perfecta</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </section>
+
+    <section id="analisis-episodios">
+        <h2>Análisis de Episodios</h2>
+        <p>Reseñas y análisis de episodios específicos del anime, discutiendo su impacto en la trama general y en el
+            desarrollo de los personajes.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Número de Episodio</th>
+                    <th>Título</th>
+                    <th>Descripción</th>
+                    <th>Valoración</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>El secreto de la esfera del dragón</td>
+                    <td>Goku conoce a Bulma y comienzan su búsqueda de las esferas del dragón.</td>
+                    <td><meter min="0" max="10" value="8"></meter></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>La emperatriz del mal</td>
+                    <td>Goku y Bulma se encuentran con el Maestro Roshi y Oolong.</td>
+                    <td><meter min="0" max="10" value="7"></meter></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>La nube voladora de Kame-Sen'nin</td>
+                    <td>Goku recibe la nube voladora del Maestro Roshi.</td>
+                    <td><meter min="0" max="10" value="9"></meter></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Oolong el secuestrador</td>
+                    <td>Goku y Bulma se enfrentan a Oolong, quien ha estado secuestrando niñas.</td>
+                    <td><meter min="0" max="10" value="6"></meter></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Yamcha, el guerrero del desierto</td>
+                    <td>Goku y Bulma se encuentran con Yamcha y Puar en el desierto.</td>
+                    <td><meter min="0" max="10" value="8"></meter></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>El despertar del gran pez</td>
+                    <td>Goku y Bulma se encuentran con el pez gigante mientras buscan las esferas del dragón.</td>
+                    <td><meter min="0" max="10" value="7"></meter></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>El monte Frypan</td>
+                    <td>Goku y Bulma llegan al monte Frypan y conocen a Chi-Chi y su padre, el Rey Ox.</td>
+                    <td><meter min="0" max="10" value="8"></meter></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>La Kamehameha de Kame-Sen'nin</td>
+                    <td>El Maestro Roshi demuestra su poder con una Kamehameha para apagar el fuego del monte Frypan.
+                    </td>
+                    <td><meter min="0" max="10" value="9"></meter></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>El conejo monstruo</td>
+                    <td>Goku y Bulma se enfrentan a la pandilla del conejo monstruo.</td>
+                    <td><meter min="0" max="10" value="6"></meter></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Las esferas del dragón se reúnen</td>
+                    <td>Goku y sus amigos reúnen las siete esferas del dragón y convocan a Shenlong.</td>
+                    <td><meter min="0" max="10" value="10"></meter></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="seccion-analisis">
+        <h2>Análisis</h2>
+        <h3>Episodio 11: El regreso de Goku</h3>
+        <p>Goku regresa a la Tierra después de entrenar con el Maestro Roshi y se enfrenta a nuevos desafíos.</p>
+        <p>En este episodio, Goku regresa a la Tierra después de un intenso entrenamiento con el Maestro Roshi. Su regreso marca un punto crucial en la serie, ya que demuestra el crecimiento y desarrollo del personaje principal. Goku se enfrenta a nuevos desafíos que ponen a prueba sus habilidades y determinación.</p>
+        <p>El episodio destaca por su excelente animación y secuencias de combate bien coreografiadas. La narrativa se centra en la evolución de Goku como guerrero y su compromiso con la protección de la Tierra. Además, se introducen nuevos personajes que jugarán roles importantes en futuros arcos argumentales.</p>
+        <p>La recepción del episodio fue muy positiva entre los fanáticos y críticos, quienes elogiaron la profundidad del desarrollo del personaje y la calidad de la animación. Este episodio es considerado uno de los momentos clave en la serie, estableciendo el tono para los eventos que seguirán.</p>
+        <p>Valoración: <meter min="0" max="10" value="8"></meter></p>
+    </section>
+
+    <section id="encuestas-opiniones">
+        <h2>Encuestas</h2>
+        <form id="encuesta">
+            <label for="best-villain">¿Freezer es tu villano favorito en Dragon Ball?</label>
+            <div class="star-rating">
+                <input type="radio" id="star5" name="best-villain" value="5">
+                <label for="star5" title="5"></label>
+                <input type="radio" id="star4" name="best-villain" value="4">
+                <label for="star4" title="4"></label>
+                <input type="radio" id="star3" name="best-villain" value="3">
+                <label for="star3" title="3"></label>
+                <input type="radio" id="star2" name="best-villain" value="2">
+                <label for="star2" title="2"></label>
+                <input type="radio" id="star1" name="best-villain" value="1">
+                <label for="star1" title="1"></label>
+            </div>
+            <button type="submit">Votar</button>
+        </form>
+        <p id="rating-result">No hay votos aún.</p>
+    </section>
+
+    <section id="opiniones-usuarios">
+        <h2>Opiniones de los Usuarios</h2>
+        <div class="opiniones-container">
+            <div class="opinion">
+                <img src="images/user1.jpg" alt="Usuario 1">
+                <div class="opinion-content">
+                    <h3>Juan Pérez</h3>
+                    <p>"Dragon Ball ha sido una parte importante de mi infancia. ¡Me encanta este fanzine!"</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="opinion">
+                <img src="images/user2.jpg" alt="Usuario 2">
+                <div class="opinion-content">
+                    <h3>María López</h3>
+                    <p>"Este sitio es increíble. Me encanta leer sobre los personajes y sus transformaciones."</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="opinion">
+                <img src="images/user3.jpg" alt="Usuario 3">
+                <div class="opinion-content">
+                    <h3>Carlos García</h3>
+                    <p>"Las curiosidades y datos interesantes son mi sección favorita. ¡Muy bien hecho!"</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="cta">
+            <h3>Únete a nuestra comunidad</h3>
+            <button>Suscribirse</button>
+        </div>
+        <div class="social-menu">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2023 Fanzine Dragon Ball. Todos los derechos reservados.</p>
+    </footer>
+
+    <button id="scroll-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

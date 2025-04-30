@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1em;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  color: #333;
+  text-wrap: pretty;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0vw;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #f4cbac;
+    &:hover{
+      color: crimson;
+    }
+  }
+}
+.menu li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  grid-column: span 12;
+}
+
+main {
+  padding: 20px;
+  grid-column: span 9;
+}
+
+section,
+aside,
+footer {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  grid-column: span 12;
+  text-align: center;
+}
+
+#historia figure,
+aside {
+  margin: 0;
+  img {
+    width: 100%;
+  }
+}
+
+main figure{ 
+  padding: 15px 15px 0;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  figcaption{
+    text-align: center;
+  }
+}
+
+aside {
+  grid-column: span 3;
+  margin: 20px 5px;
+}
+
+@media (min-width: 768px) {
+}
+
+/* Estilos para la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #aaa;
+}
+
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Estilos para el formulario */
+form {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+textarea {
+    height: 20vh;
+    resize:vertical;
+}
+
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+ul{
+  list-style-type: none;
+}
+
+            
+.check-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.check-list li {
+  position: relative;
+  list-style-type: none;
+  padding-left: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.check-list li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 5px;
+    height: 11px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: #00a8a8;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+}
+    
+em{
+  color: darkgreen;
+}
+strong{
+  color: darkgoldenrod;
+}
+section a{
+  color: #ff3f49;
+}

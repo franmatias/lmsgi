@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos CSS</title>
+    <style>
+        .contenedor{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            height: 100vh;
+            color: rgba(0,0,0, 0.8);
+            font: 1rem Helvetica, sans-serif;
+        }
+        /* Estilos de textos en columnas */
+        .textos{
+            padding: 1rem;
+            background: linear-gradient(0deg, #6d6464 0%, #ce8f8f 100%);
+            border-radius: 8px;
+        }
+        .col{
+            column-gap: 1rem;
+            column-fill: balance;
+            column-rule: 3px solid #ccc;
+            padding: 0 10px;            
+        }
+        .col-2{
+            columns: 2;
+        }
+        .col-3{
+            columns: 3;
+        }
+        .col-4{
+            columns: 4;
+        }
+        section{
+            margin-bottom: 1rem;
+        }
+        /* cajas */
+        .cajas{
+            display: flex;
+            flex-flow: row nowrap;
+            font-size: 1.5rem;
+            & > article{
+                flex: 1;
+                padding: 1rem;
+                margin: 0.5rem;
+                text-align: center;
+                border: 1px solid black;
+                height: auto;
+                box-shadow: 1px 1px 5px rgba(0,0,0, 0.5);
+            }
+            .caja1{
+                border-radius: 50%;
+                color: transparent;
+                background: linear-gradient(90deg, #AA151B 33.33%, #F1BF00 33.33%, #F1BF00 66.66%, #AA151B 66.66%);
+            }
+            .caja2{
+                border-radius: 50%;
+                color: transparent;
+                background: linear-gradient(90deg, #0055A4 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #EF4135 66.66%);
+            }
+            .caja3{
+                border-radius: 50%;
+                color: transparent;
+                background: linear-gradient(90deg, #000000 33.33%, #DD0000 33.33%, #DD0000 66.66%, #FFCE00 66.66%);
+            }
+            .caja4{
+                border-radius: 40% / 10%;
+                background: linear-gradient(0deg, green 10% 30%, transparent 100%);
+            }
+            .caja5{
+                border-radius: 10% / 40%;
+                background: linear-gradient(to right, green 10% 30%, transparent 100%);
+            }
+            .caja6{
+                border-radius: 10% / 40%;
+                background: linear-gradient(to bottom, red 5%, transparent 10%, black 90%, yellow 100%);
+            }
+            .caja7{
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>ESTILOS CSS</h1>                
+        </header>
+        <main>
+            <section class="textos">
+                <p class="col col-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, dolorum? Incidunt repellendus veniam dolore asperiores tempore! Quia soluta deserunt accusantium nulla magnam illum voluptatum nesciunt nihil impedit. Laborum, magni sit!</p>
+                <p class="col col-3">Odit, sapiente. Similique autem tempora qui, corporis quos incidunt. Quia molestias aperiam alias inventore at? Culpa ullam delectus vel qui, iure minima inventore facere voluptate alias voluptatum assumenda, sunt libero!</p>
+                <p class="col col-4">Hic quam natus ratione pariatur magnam commodi architecto veritatis corrupti iusto ab eum reprehenderit dicta in ipsam, tempora minima omnis harum, quibusdam nostrum quis eligendi modi impedit mollitia quidem. Ipsam?</p>
+            </section>
+            <section class="cajas">
+                <article class="caja1">1</article>
+                <article class="caja2">2</article>
+                <article class="caja3">3</article>
+                <article class="caja4">4</article>
+                <article class="caja5">5</article>
+                <article class="caja6">6</article>
+                <article class="caja7">7</article>
+                <article class="caja8">8</article>
+            </section>
+        </main>
+    </div> 
+</body>
+</html>
