@@ -20,30 +20,43 @@
       <div class="logo">
         <figure><img src="assets/images/logo.png" alt="Logo"></figure>
       </div>
-      <h1><a href="">SOLARIS</a></h1>
+      <h1><a href="#">SOLARIS</a></h1>
+      
+      <!-- Botón hamburguesa para menú móvil - Mejorar visibilidad en móvil -->
+      <button class="hamburger-menu" aria-label="Menú" style="display: none;">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      
       <nav class="mainmenu">
         <ul>
-          <li><a href="">Sol</a></li>
-          <li><a href="">Planetas</a></li>
-          <li><a href="">Satelites</a></li>
-          <li><a href="">Asteroides</a></li>
-          <li><a href="">Contactar</a></li>
+          <li><a href="#sol">Sol</a></li>
+          <li><a href="#planetas">Planetas</a></li>
+          <li><a href="#satelites">Satelites</a></li>
+          <li><a href="#asteroides">Asteroides</a></li>
+          <li><a href="#contactar">Contactar</a></li>
         </ul>
       </nav>
-      <div class="login">
-        <a href=""><span class="material-symbols-outlined"> person </span></a>
+      
+      <!-- Asegurar que aparece en el header -->
+      <div class="search-container">
+        <button type="button" class="search-toggle" aria-label="Buscar">
+          <span class="material-symbols-outlined">search</span>
+        </button>
+        <div class="search-input-wrapper">
+          <input type="search" id="bt-search" class="btnsearch" placeholder="Search">
+        </div>
       </div>
-
+      
+      <div class="login">
+        <a href="#"><span class="material-symbols-outlined"> person </span></a>
+      </div>
     </header>
-    <div class="search">
-      <input type="search" id="bt-search" class="btnsearch" placeholder="Search">
-    </div>
-
+    
     <main>
-      <section class="introduce"> 
+      <section class="introduce" id="introduccion">
         <article>
-          <figure class="large"><img src="assets/images/solar-system.jpg" alt=""></figure>
-          <h2>El Universo</h2>
+          <figure class="large"><img src="assets/images/solar-system.jpg" alt="Vista general del Sistema Solar"></figure>
+          <h2>El Universo y Nuestro Sistema Solar</h2>
           <p>
             El Universo es un lugar enorme. Sus dimensiones son tan
             colosalmente grandes que incluso resultan difíciles de imaginar
@@ -77,75 +90,308 @@
           </p>
         </article>
       </section>
-      <section class="solarsys-container">
+
+      <section id="sol">
+        <h2>El Sol</h2>
+        <article>
+          <figure><img src="assets/images/sol.jpg" alt="El Sol"></figure> <!-- Asumiendo que tienes una imagen sol.jpg -->
+          <p>El Sol es la estrella central de nuestro sistema solar. Es una esfera casi perfecta de plasma caliente, con un movimiento convectivo interno que genera un campo magnético.</p>
+          <p>Proporciona la luz, el calor y la energía necesarios para la vida en la Tierra.</p>
+        </article>
+      </section>
+      <section>
+        <h2>Planetas del Sistema Solar</h2>
+      </section>
+      <section class="solarsys-container" id="planetas">
+        
         <article class="planet mercurio">
-          <figure><img src="assets/images/mercurio.png" alt="Mercurio"></figure>
-          <h3><a href="">Mercurio</a></h3>
+          <figure>
+            <img src="assets/images/mercurio.png" alt="Planeta Mercurio">
+            <figcaption>Imagen del planeta Mercurio.</figcaption>
+          </figure>
+          <h3><a href="#">Mercurio</a></h3>
           <p>Mercurio es el planeta más cercano al Sol y el más pequeño del sistema solar.</p>  
           <p>No tiene lunas y su superficie está llena de cráteres debido a los impactos de meteoritos.</p>
         </article>
         <article class="planet venus">
-          <figure><img src="assets/images/venus.jpg" alt="Venus"></figure>
-          <h3><a href="">Venus</a></h3>
+          <figure>
+            <img src="assets/images/venus.jpg" alt="Planeta Venus">
+            <figcaption>Imagen del planeta Venus.</figcaption>
+          </figure>
+          <h3><a href="#">Venus</a></h3>
           <p>Venus es el segundo planeta desde el Sol y tiene una atmósfera densa y tóxica.</p>
           <p>Su superficie está cubierta de volcanes y la temperatura puede alcanzar los 462°C debido al efecto invernadero.</p>
         </article>
         <article class="planet tierra">
-          <figure><img src="assets/images/tierra.jpg" alt="Tierra"></figure>
-          <h3><a href="">Tierra</a></h3>
+          <figure>
+            <img src="assets/images/tierra.jpg" alt="Planeta Tierra">
+            <figcaption>Imagen del planeta Tierra.</figcaption>
+          </figure>
+          <h3><a href="#">Tierra</a></h3>
           <p>La Tierra es el tercer planeta desde el Sol y el único conocido con vida.</p>
           <p>Tiene una atmósfera rica en oxígeno, grandes océanos de agua líquida y un campo magnético que nos protege.</p>
         </article>
         <article class="planet marte">
-          <figure><img src="assets/images/marte.jpg" alt="Marte"></figure>
-          <h3><a href="">Marte</a></h3>
+          <figure>
+            <img src="assets/images/marte.jpg" alt="Planeta Marte">
+            <figcaption>Imagen del planeta Marte.</figcaption>
+          </figure>
+          <h3><a href="#">Marte</a></h3>
           <p>Marte, conocido como el planeta rojo, es el cuarto planeta desde el Sol.</p>
           <p>Posee el monte más alto del sistema solar, el Olympus Mons, y tiene dos pequeñas lunas llamadas Fobos y Deimos.</p>
         </article>
         <article class="planet jupiter">
-          <figure><img src="assets/images/jupiter.jpg" alt="Júpiter"></figure>
-          <h3><a href="">Júpiter</a></h3>
+          <figure>
+            <img src="assets/images/jupiter.jpg" alt="Planeta Júpiter">
+            <figcaption>Imagen del planeta Júpiter.</figcaption>
+          </figure>
+          <h3><a href="#">Júpiter</a></h3>
           <p>Júpiter es el planeta más grande del sistema solar y el quinto desde el Sol.</p>
           <p>Tiene una gran mancha roja que es una tormenta gigante que ha durado por lo menos 400 años.</p>
         </article>
         <article class="planet saturno">
-          <figure><img src="assets/images/saturno.jpg" alt="Saturno"></figure>
-          <h3><a href="">Saturno</a></h3>
+          <figure>
+            <img src="assets/images/saturno.jpg" alt="Planeta Saturno">
+            <figcaption>Imagen del planeta Saturno.</figcaption>
+          </figure>
+          <h3><a href="#">Saturno</a></h3>
           <p>Saturno es el sexto planeta desde el Sol y es famoso por sus anillos.</p>
           <p>Sus anillos están compuestos principalmente de hielo y roca, y tiene 83 lunas confirmadas.</p>
         </article>
         <article class="planet urano">
-          <figure><img src="assets/images/urano.jpg" alt="Urano"></figure>
-          <h3><a href="">Urano</a></h3>
+          <figure>
+            <img src="assets/images/urano.jpg" alt="Planeta Urano">
+            <figcaption>Imagen del planeta Urano.</figcaption>
+          </figure>
+          <h3><a href="#">Urano</a></h3>
           <p>Urano es el séptimo planeta desde el Sol y tiene un eje de rotación único.</p>
           <p>Gira prácticamente de lado, con su eje inclinado 98 grados, y tiene anillos muy tenues.</p>
         </article>
         <article class="planet neptuno">
-          <figure><img src="assets/images/neptuno.jpg" alt="Neptuno"></figure>
-          <h3><a href="">Neptuno</a></h3>
+          <figure>
+            <img src="assets/images/neptuno.jpg" alt="Planeta Neptuno">
+            <figcaption>Imagen del planeta Neptuno.</figcaption>
+          </figure>
+          <h3><a href="#">Neptuno</a></h3>
           <p>Neptuno es el octavo planeta desde el Sol y es conocido por sus fuertes vientos.</p>
           <p>Sus vientos son los más rápidos del sistema solar, alcanzando velocidades de hasta 2.100 km/h.</p>
         </article>
       </section>
 
-      <section class="curiosities">
-        <h2>Curiosidades del Sistema Solar</h2>
+      <section id="satelites">
+        <h2>Satélites Naturales</h2>
         <article>
-          <h3>¿Sabías que...?</h3>
-          <ul>
-            <li>La luz del Sol tarda aproximadamente 8 minutos en llegar a la Tierra.</li>
-            <li>Un día en Venus es más largo que su año.</li>
-            <li>El Gran Cañón de Marte es tan largo como Estados Unidos.</li>
-            <li>Júpiter tiene tormentas que duran cientos de años.</li>
-            <li>Los anillos de Saturno están hechos principalmente de hielo y polvo.</li>
-            <li>Si la Tierra fuera del tamaño de una canica, Júpiter sería del tamaño de una pelota de baloncesto.</li>
-            <li>En Mercurio, el Sol aparece tres veces más grande que visto desde la Tierra.</li>
-            <li>Urano gira "acostado" sobre su órbita.</li>
-          </ul>
+          <p>Los satélites naturales, comúnmente llamados lunas, son cuerpos celestes que orbitan alrededor de un planeta. La Tierra tiene una luna, mientras que gigantes gaseosos como Júpiter y Saturno tienen docenas.</p>
+          <!-- Aquí se podría añadir más contenido sobre lunas específicas -->
         </article>
       </section>
 
-      <section class="timeline">
+      <section id="asteroides">
+        <h2>Asteroides y Cometas</h2>
+        <article>
+          <p>Los asteroides son cuerpos rocosos más pequeños que los planetas, la mayoría orbitando en el cinturón de asteroides entre Marte y Júpiter. Los cometas son cuerpos helados que desarrollan una cola visible cuando se acercan al Sol.</p>
+          <!-- Aquí se podría añadir más contenido sobre asteroides y cometas -->
+        </article>
+      </section>
+
+      <section class="planet-table-container">
+        <h2>Datos de los Planetas</h2>
+        <div class="table-container">
+          <table class="planet-data">
+            <thead>
+              <tr>
+                <th>Planeta</th>
+                <th>Distancia al Sol (millones de km)</th>
+                <th>Diámetro (km)</th>
+                <th>Duración del día (horas)</th>
+                <th>Duración del año (días terrestres)</th>
+                <th>Temperatura media (°C)</th>
+                <th>Número de lunas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mercurio</td>
+                <td>57.9</td>
+                <td>4,880</td>
+                <td>1,408</td>
+                <td>88</td>
+                <td>167</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Venus</td>
+                <td>108.2</td>
+                <td>12,104</td>
+                <td>5,832</td>
+                <td>225</td>
+                <td>464</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Tierra</td>
+                <td>149.6</td>
+                <td>12,742</td>
+                <td>24</td>
+                <td>365.25</td>
+                <td>15</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Marte</td>
+                <td>227.9</td>
+                <td>6,779</td>
+                <td>24.6</td>
+                <td>687</td>
+                <td>-65</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Júpiter</td>
+                <td>778.3</td>
+                <td>139,820</td>
+                <td>9.9</td>
+                <td>4,333</td>
+                <td>-110</td>
+                <td>79</td>
+              </tr>
+              <tr>
+                <td>Saturno</td>
+                <td>1,429.4</td>
+                <td>116,460</td>
+                <td>10.7</td>
+                <td>10,759</td>
+                <td>-140</td>
+                <td>83</td>
+              </tr>
+              <tr>
+                <td>Urano</td>
+                <td>2,870.9</td>
+                <td>50,724</td>
+                <td>17.2</td>
+                <td>30,687</td>
+                <td>-195</td>
+                <td>27</td>
+              </tr>
+              <tr>
+                <td>Neptuno</td>
+                <td>4,498.3</td>
+                <td>49,244</td>
+                <td>16.1</td>
+                <td>60,190</td>
+                <td>-200</td>
+                <td>14</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </main>
+
+    <aside>
+      <section class="curiosities" id="curiosidades">
+        <h2>Curiosidades del Sistema Solar</h2>
+        <div class="curiosity-cards">
+          <div class="curiosity-card" data-planet="sol">
+            <div class="curiosity-card-inner">
+              <div class="curiosity-card-front">
+                <span class="material-symbols-outlined">wb_sunny</span>
+                <h4>El Sol</h4>
+              </div>
+              <div class="curiosity-card-back">
+                <p>La luz del Sol tarda aproximadamente 8 minutos en llegar a la Tierra.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="curiosity-card" data-planet="venus">
+            <div class="curiosity-card-inner">
+              <div class="curiosity-card-front">
+                <span class="material-symbols-outlined">public</span>
+                <h4>Venus</h4>
+              </div>
+              <div class="curiosity-card-back">
+                <p>Un día en Venus es más largo que su año.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="curiosity-card" data-planet="marte">
+            <div class="curiosity-card-inner">
+              <div class="curiosity-card-front">
+                <span class="material-symbols-outlined">terrain</span>
+                <h4>Marte</h4>
+              </div>
+              <div class="curiosity-card-back">
+                <p>El Gran Cañón de Marte es tan largo como Estados Unidos.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="curiosity-card" data-planet="jupiter">
+            <div class="curiosity-card-inner">
+              <div class="curiosity-card-front">
+                <span class="material-symbols-outlined">storm</span>
+                <h4>Júpiter</h4>
+              </div>
+              <div class="curiosity-card-back">
+                <p>Júpiter tiene tormentas que duran cientos de años.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="curiosity-card" data-planet="saturno">
+            <div class="curiosity-card-inner">
+              <div class="curiosity-card-front">
+                <span class="material-symbols-outlined">radar</span>
+                <h4>Saturno</h4>
+              </div>
+              <div class="curiosity-card-back">
+                <p>Los anillos de Saturno están hechos principalmente de hielo y polvo.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="curiosity-card" data-planet="comparacion">
+            <div class="curiosity-card-inner">
+              <div class="curiosity-card-front">
+                <span class="material-symbols-outlined">sports_basketball</span>
+                <h4>Tamaños</h4>
+              </div>
+              <div class="curiosity-card-back">
+                <p>Si la Tierra fuera del tamaño de una canica, Júpiter sería del tamaño de una pelota de baloncesto.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="curiosity-card" data-planet="mercurio">
+            <div class="curiosity-card-inner">
+              <div class="curiosity-card-front">
+                <span class="material-symbols-outlined">brightness_7</span>
+                <h4>Mercurio</h4>
+              </div>
+              <div class="curiosity-card-back">
+                <p>En Mercurio, el Sol aparece tres veces más grande que visto desde la Tierra.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="curiosity-card" data-planet="urano">
+            <div class="curiosity-card-inner">
+              <div class="curiosity-card-front">
+                <span class="material-symbols-outlined">rotate_90_degrees_ccw</span>
+                <h4>Urano</h4>
+              </div>
+              <div class="curiosity-card-back">
+                <p>Urano gira "acostado" sobre su órbita.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="timeline" id="historia">
         <h2>Historia de la Exploración Espacial</h2>
         <div class="timeline-container">
           <article class="timeline-item">
@@ -182,113 +428,125 @@
           </article>
         </div>
       </section>
-    
-    </main>
-    <aside>
 
-      <ul class="menu planet">
-        <li><a href="">Mercurio</a></li>
-        <li><a href="">Venus</a></li>
-        <li><a href="">Tierra</a></li>
-        <li><a href="">Marte</a></li>
-        <li><a href="">Júpiter</a></li>
-        <li><a href="">Saturno</a></li>
-        <li><a href="">Urano</a></li>
-        <li><a href="">Neptuno</a></li>
-        <li><a href="">Pluton</a></li>
-      </ul>
-
-      <table class="planet-data">
-        <thead>
-          <tr>
-            <th>Planeta</th>
-            <th>Distancia al Sol (millones de km)</th>
-            <th>Diámetro (km)</th>
-            <th>Duración del día (horas)</th>
-            <th>Duración del año (días terrestres)</th>
-            <th>Temperatura media (°C)</th>
-            <th>Número de lunas</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Mercurio</td>
-            <td>57.9</td>
-            <td>4,880</td>
-            <td>1,408</td>
-            <td>88</td>
-            <td>167</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>Venus</td>
-            <td>108.2</td>
-            <td>12,104</td>
-            <td>5,832</td>
-            <td>225</td>
-            <td>464</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>Tierra</td>
-            <td>149.6</td>
-            <td>12,742</td>
-            <td>24</td>
-            <td>365.25</td>
-            <td>15</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>Marte</td>
-            <td>227.9</td>
-            <td>6,779</td>
-            <td>24.6</td>
-            <td>687</td>
-            <td>-65</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>Júpiter</td>
-            <td>778.3</td>
-            <td>139,820</td>
-            <td>9.9</td>
-            <td>4,333</td>
-            <td>-110</td>
-            <td>79</td>
-          </tr>
-          <tr>
-            <td>Saturno</td>
-            <td>1,429.4</td>
-            <td>116,460</td>
-            <td>10.7</td>
-            <td>10,759</td>
-            <td>-140</td>
-            <td>83</td>
-          </tr>
-          <tr>
-            <td>Urano</td>
-            <td>2,870.9</td>
-            <td>50,724</td>
-            <td>17.2</td>
-            <td>30,687</td>
-            <td>-195</td>
-            <td>27</td>
-          </tr>
-          <tr>
-            <td>Neptuno</td>
-            <td>4,498.3</td>
-            <td>49,244</td>
-            <td>16.1</td>
-            <td>60,190</td>
-            <td>-200</td>
-            <td>14</td>
-          </tr>
-        </tbody>
-      </table>
-
+      <section id="contactar">
+        <h2>Contactar</h2>
+        <p>Si tienes alguna pregunta o quieres saber más, no dudes en contactarnos.</p>
+        <form action="#" method="post">
+          <div>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          <div>
+            <label for="mail">Correo electrónico:</label>
+            <input type="email" id="mail" name="user_email">
+          </div>
+          <div>
+            <label for="msg">Mensaje:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </div>
+          <div class="button">
+            <button type="submit">Enviar mensaje</button>
+          </div>
+        </form>
+      </section>
     </aside>
+
     <footer><small>Solaris © copyright 2024</small></footer>
   </div>
+  
+  <!-- Script para el menú hamburguesa -->
+  <script>
+    // Asegurar que el botón hamburguesa es visible en móvil desde el inicio
+    document.addEventListener('DOMContentLoaded', function() {
+      const hamburgerButton = document.querySelector('.hamburger-menu');
+      const mainMenu = document.querySelector('.mainmenu');
+      
+      // Mostrar el botón hamburguesa si estamos en móvil
+      if (window.innerWidth < 768) {
+        hamburgerButton.style.display = 'block';
+      }
+      
+      // Ajustar visibilidad cuando cambie el tamaño de la ventana
+      window.addEventListener('resize', function() {
+        if (window.innerWidth < 768) {
+          hamburgerButton.style.display = 'block';
+        } else {
+          hamburgerButton.style.display = 'none';
+          mainMenu.classList.remove('active'); // Cerrar menú si se agranda la pantalla
+        }
+      });
+      
+      hamburgerButton.addEventListener('click', function() {
+        mainMenu.classList.toggle('active');
+        hamburgerButton.classList.toggle('active');
+      });
+      
+      // Cerrar menú al hacer clic en un enlace (en dispositivos móviles)
+      const menuLinks = document.querySelectorAll('.mainmenu a');
+      menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          if (window.innerWidth < 768) {
+            mainMenu.classList.remove('active');
+            hamburgerButton.classList.remove('active');
+          }
+        });
+      });
+    });
+  </script>
+
+  <!-- Añadir este script antes de cerrar el body -->
+  <script>
+    // Script existente para el menú hamburguesa...
+    
+    // Añadir script para las tarjetas de curiosidades
+    document.addEventListener('DOMContentLoaded', function() {
+      const cards = document.querySelectorAll('.curiosity-card');
+      
+      cards.forEach(card => {
+        card.addEventListener('click', function() {
+          this.classList.toggle('flipped');
+        });
+        
+        // También permitir que el hover funcione en dispositivos táctiles
+        card.addEventListener('touchstart', function() {
+          this.classList.add('hover');
+        });
+        
+        card.addEventListener('touchend', function() {
+          this.classList.remove('hover');
+        });
+      });
+    });
+
+    // Controlar el comportamiento del botón de búsqueda
+    const searchToggle = document.querySelector('.search-toggle');
+    const searchContainer = document.querySelector('.search-container');
+    const searchInput = document.querySelector('#bt-search');
+    
+    searchToggle.addEventListener('click', function() {
+      searchContainer.classList.toggle('active');
+      if (searchContainer.classList.contains('active')) {
+        setTimeout(() => {
+          searchInput.focus();
+        }, 300); // Esperar a que la animación termine
+      }
+    });
+    
+    // Cerrar la búsqueda cuando se hace clic fuera
+    document.addEventListener('click', function(event) {
+      if (!searchContainer.contains(event.target) && searchContainer.classList.contains('active')) {
+        searchContainer.classList.remove('active');
+      }
+    });
+    
+    // Cerrar la búsqueda cuando se presiona Escape
+    searchInput.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        searchContainer.classList.remove('active');
+      }
+    });
+  </script>
 </body>
 
 </html>
